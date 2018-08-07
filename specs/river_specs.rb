@@ -18,4 +18,11 @@ def test_add_fish
   @river.add_fish(@fish)
   assert_equal([@fish], @river.fishes)
 end
+
+def test_remove_fish
+  @river.add_fish(@fish)
+  @river.remove_fish(@fish)
+  assert_equal([], @river.fishes)
+end
+
 end
