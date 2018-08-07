@@ -34,4 +34,13 @@ def test_take_fish_from_the_river__fishes
 assert_equal([@fish2],@river.fishes)
 end
 
+def test_roar
+  @bear.roar()
+  assert_equal("Roar!", @bear.roar())
+end
+def test_food_count
+  @bear.food_count()
+  assert_equal(0, @bear.food_count())
+end
+
 end
